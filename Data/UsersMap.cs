@@ -1,4 +1,4 @@
-﻿using Api.Models;
+﻿/*using Api.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -15,3 +15,4 @@ namespace Api.Data
         }
     }
 }
+*/

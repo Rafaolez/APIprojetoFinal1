@@ -1,4 +1,4 @@
-﻿using Api.Data;
+﻿/*using Api.Data;
 using Api.Models;
 using Api.Repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +6,7 @@ using System.Data;
 
 namespace Api.Repositorios
 {
-    public class UsersRepositorio : IUsersRepositorio
+    public class UsersRepositorio : IUsuarioRepositorio
     {
         private readonly Contexto _dbContext;
 
@@ -62,7 +62,9 @@ namespace Api.Repositorios
             _dbContext.User.Remove(users);
             await _dbContext.SaveChangesAsync();
             return true;
-        }    
-       
+        }
+
+        
     }
 }
+*/

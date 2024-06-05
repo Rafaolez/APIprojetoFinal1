@@ -1,4 +1,4 @@
-﻿namespace Api.Models
+﻿/*namespace Api.Models
 {
     public class UsersModel
     {
@@ -14,5 +14,8 @@
         {
             throw new NotImplementedException();
         }
+
+
     }
 }
+*/

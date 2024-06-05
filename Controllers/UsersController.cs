@@ -1,4 +1,4 @@
-﻿using Api.Models;
+﻿/*using Api.Models;
 using Api.Repositorios.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,9 +10,9 @@ namespace Api.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly IUsersRepositorio _usersRepositorio;
+        private readonly IUsuarioRepositorio _usersRepositorio;
 
-        public UsersController(IUsersRepositorio usersRepositorio)
+        public UsersController(IUsuarioRepositorio usersRepositorio)
         {
             _usersRepositorio = usersRepositorio;
         }
@@ -40,3 +40,4 @@ namespace Api.Controllers
 
     }
 }
+*/

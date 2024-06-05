@@ -1,8 +1,8 @@
-﻿using Api.Models;
+﻿/*using Api.Models;
 
 namespace Api.Repositorios.Interfaces
 {
-    public interface IUsersRepositorio
+    public interface IUserRepositorio
     {
         Task<List<UsersModel>> GetAll();
 
@@ -15,3 +15,4 @@ namespace Api.Repositorios.Interfaces
         Task<bool> DeleteUser(int id);
     }
 }
+*/

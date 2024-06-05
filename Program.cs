@@ -16,7 +16,11 @@ builder.Services.AddEntityFrameworkSqlServer()
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
     );
 
-builder.Services.AddScoped <IUsersRepositorio, UsersRepositorio>();
+builder.Services.AddScoped <IUsuarioRepositorio, UsuarioRepositorio>();
+builder.Services.AddScoped<IPessoaRepositorio, PessoaRepositorio>();
+builder.Services.AddScoped<IObservacaoRepositorio,ObservacaoRepositorio>();
+
+
 
 builder.Services.AddCors(options =>
 {
