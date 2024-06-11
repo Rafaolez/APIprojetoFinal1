@@ -10,8 +10,10 @@ namespace Api.Repositorios.Interfaces
 
         Task<UsuarioModel> InsertUsuario(UsuarioModel usuario);
 
+        Task<UsuarioModel> Login(UsuarioModel email, string passaword);
         Task<UsuarioModel> UpdateUsuario(UsuarioModel usuario, int id);
 
         Task<bool> DeleteUsuario(int id);
+        Task<UsuarioModel> Login(string email, string password);
     }
 }
