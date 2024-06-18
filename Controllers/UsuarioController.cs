@@ -30,10 +30,11 @@ namespace Api.Controllers
         }
 
         [HttpPost("Login")]
-        public async Task<ActionResult<UsuarioModel>> Login(string email, string password)
+        public async Task<ActionResult<UsuarioModel>> Login([FromBody] UsuarioModel usuarioModel)
         {
-            UsuarioModel usuario = await _usuarioRepositorio.Login(email, password);
+            UsuarioModel usuario = await _usuarioRepositorio.Login(usuarioModel.UsuarioEmail, usuarioModel.UsuarioSenha);
             return Ok(usuario);
+
         }
 
         [HttpPost("CreateUsuario")]

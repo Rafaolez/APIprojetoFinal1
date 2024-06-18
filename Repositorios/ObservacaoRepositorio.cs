@@ -23,6 +23,11 @@ namespace Api.Repositorios
             return await _dbContext.Observacoes.FirstOrDefaultAsync(x => x.ObservacoesId == id);
         }
 
+        public async Task<List<ObservacoesModel>> GetObservacaoPessoaId(int id)
+        {
+            return await _dbContext.Observacoes.Where(x => x.PessoaId == id).ToListAsync();
+        } 
+
         public async Task<ObservacoesModel> InsertObservacaoes(ObservacoesModel observacaoes)
         {
             await _dbContext.Observacoes.AddAsync(observacaoes);

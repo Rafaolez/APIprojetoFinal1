@@ -21,11 +21,19 @@ namespace Api.Controllers
             return Ok(observacaoes);
         }
 
-        [HttpGet("GetProductsId/{id}")]
+        [HttpGet("GetObservacaoesId/{id}")]
         public async Task<ActionResult<ObservacoesModel>> GetObservacaoesId(int id)
         {
             ObservacoesModel observacaoes = await _observacaoRepositorio.GetById(id);
             return Ok(observacaoes);
+        }
+
+        [HttpGet("GetObservacaoPessoaId/{id}")]
+        public async Task<List<ObservacoesModel>> GetObservacaoPessoaId(int id)
+        {
+            List<ObservacoesModel> observacaoes = new List<ObservacoesModel>();
+            observacaoes = await _observacaoRepositorio.GetObservacaoPessoaId(id);
+            return observacaoes;
         }
 
 
